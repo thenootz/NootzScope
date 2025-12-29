@@ -1,4 +1,6 @@
-```
+# ML Spam Detection (SSOSM)
+
+```bash
   _   _             _        _____                      
  | \ | |           | |      / ____|                     
  |  \| | ___   ___ | |_ ___| (___   ___ ___  _ __   ___ 
@@ -7,12 +9,13 @@
  |_| \_|\___/ \___/ \__/___|_____/ \___\___/| .__/ \___|
                                             | |         
                                             |_|         
-ML Spam Detection (SSOSM) · author: thenootz
 
 ```
+
 ---
 
 ## 📌 Overview
+
 **NOOTZSCOPE** is a Machine Learning–based email spam classifier developed for the **SSOSM laboratory**.  
 It classifies emails as **clean (`cln`)** or **infected/spam (`inf`)** using generic ML techniques (TF-IDF + linear models), fully compliant with course rules.
 
@@ -21,6 +24,7 @@ No prebuilt anti-spam libraries are used.
 ---
 
 ## 🧠 Approach
+
 - **Text representation**
   - Word n-grams (1–2)
   - Character n-grams (3–5)
@@ -38,6 +42,7 @@ No prebuilt anti-spam libraries are used.
 ## 🖥️ CLI Usage
 
 ### Project info
+
 ```bash
 python main.py -info output.json
 ```
@@ -47,6 +52,7 @@ python main.py -info output.json
 It is recommended to use a virtual environment to ensure reproducible results.
 
 ### Create venv
+
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
@@ -54,5 +60,3 @@ pip install -r requirements.txt
 
 deactivate
 ```
-
-
