@@ -21,6 +21,11 @@ import sys
 from pathlib import Path
 from typing import List, Tuple
 
+# Ensure src/ is on PYTHONPATH
+ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+sys.path.insert(0, str(SRC))
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
