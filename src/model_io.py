@@ -85,11 +85,8 @@ def bundle_to_dict(b: ModelBundle) -> Dict[str, Any]:
 
 
 def save_bundle(path: Path, bundle: ModelBundle) -> None:
-    """
-    Saves a model bundle to disk using joblib. Overwrites existing file.
-    """
     path.parent.mkdir(parents=True, exist_ok=True)
-    joblib.dump(bundle_to_dict(bundle), path)
+    joblib.dump(bundle_to_dict(bundle), path, compress=3)
 
 
 def load_bundle_strict(path: Path) -> ModelBundle:
