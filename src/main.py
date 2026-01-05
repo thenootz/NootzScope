@@ -26,7 +26,7 @@ PROJECT_INFO = {
     "student_name": "Danut IURASCU",
     "project_name": "NootzScope",
     "student_alias": "thenootz",
-    "project_version": "1.0.0",
+    "project_version": "1.1.0",
 }
 
 
